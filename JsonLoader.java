@@ -104,7 +104,7 @@ public class JsonLoader extends LoadFunc {
         return null;
 	}
 
-    protected Tuple parseStringToTuple(String line) {
+	protected Tuple parseStringToTuple(String line) {
         try {
             Map<String, Object> values = new HashMap<String, Object>();
             JsonNode node = mapper.readTree(line);
@@ -165,7 +165,7 @@ public class JsonLoader extends LoadFunc {
 				bag.add( tupleFactory.newTuple(value));
 			}
 		}
-    }
+	}
 
 	@SuppressWarnings("unchecked")
 	@Override
